@@ -1,20 +1,18 @@
-# Cigar2  
-Protocol 6 Agar.io client for private servers
+# MultiOgarII
+MultiOgarII is a FOSS agar.io server implementation that is based upon the [work done](https://github.com/Barbosik/MultiOgar) by [Barbosik](https://github.com/Barbosik/).
 
-### Getting support | Discord server
-If you need extra help with anything you should ask it in the [Agar.io Private Servers Discord](https://discord.gg/66X2ESb) and not in issues.
+# Usage
+Before the server can be used you need to install [NodeJS](https://nodejs.org/en/) onto your machine. Instructions for which are available on the NodeJS website linked above.
 
-### Adding servers
-Locate the select element in the index.html and add new entries, make sure to only have one option with `selected`
+## Running
+The server can be ran by executing the following commands in a `Linux` terminal or a `Windows Command Prompt`. This is assuming that you're in the `root` of the project directory.
+```BASH
+# install modules
+$ npm i
 
-### [Recommended server, OgarII by Luka](https://github.com/Luka967/OgarII)
+# change directory
+$ cd src
 
-### Credits
-- [Original Cigar](https://github.com/CigarProject/Cigar)
-- [Luka's Cigar](https://github.com/Luka967/Cigar)
-
-### Uploading skins
-Upload your **PNG** files to the skins folder and run the updateSkinList file in the root directory, you can also do it manually by putting the skin names in `web/skinList.txt` separated by commas (no file extension).
-
-### Todos
-Check out [issue 1](https://github.com/Cigar2/Cigar2/issues/1)
+# start server
+$ node index.js
+```
