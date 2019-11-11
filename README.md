@@ -1,5 +1,5 @@
 # Bebl  
-Bebl is an edited version of the [Cigar2](https://github.com/Cigar2/Cigar2) client for ogar servers
+[Bebl](https://bebl.glitch.me) is an edited version of the [Cigar2](https://github.com/Cigar2/Cigar2) client for ogar servers
 
 ### Getting support | Discord server
 If you need extra help with anything you should ask it in the [Agar.io Private Servers Discord](https://discord.gg/66X2ESb) and not in issues.
