@@ -209,6 +209,44 @@ input[type=checkbox] {
     border-radius:1000px;
     margin-bottom:5%;
 }
+#submit-skin {
+    color:#fff;
+    background-color:#202020;
+    margin-top:64.7%;
+    border:#202020 2px solid;
+    width:50%;
+    margin-left:0%;
+    height:13%;
+}
+#more-games {
+    color:#fff;
+    background-color:#202020;
+    margin-top:64.7%;
+    border:#202020 2px solid;
+    width:50%;
+    margin-left:0%;
+    border-bottom-right-radius:12px;
+    height:13%;
+}
+#submit-skin:hover {
+    color:#fff;
+    background-color:#2E2E2E;
+    margin-top:64.5%;
+    border:#2E2E2E 2px solid;
+    width:50%;
+    margin-left:0%;
+    height:13%;
+}
+#more-games:hover {
+    color:#fff;
+    background-color:#2E2E2E;
+    margin-top:64.5%;
+    border:#2E2E2E 2px solid;
+    width:50%;
+    margin-left:0%;
+    border-bottom-right-radius:12px;
+    height:13%;
+}
 #na-ultra {
     margin-bottom: 0px;
     width:100%;
