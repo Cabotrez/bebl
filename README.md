@@ -1,5 +1,5 @@
 # Bebl  
-Bebl is an edited version of the cigar2 client for ogar servers
+Bebl is an edited version of the [Cigar2](https://github.com/Cigar2/Cigar2) client for ogar servers
 
 ### Getting support | Discord server
 If you need extra help with anything you should ask it in the [Agar.io Private Servers Discord](https://discord.gg/66X2ESb) and not in issues.
@@ -11,10 +11,8 @@ Locate the select element in the index.html and add new entries, make sure to on
 
 ### Credits
 - [Original Cigar](https://github.com/CigarProject/Cigar)
-- [Luka's Cigar](https://github.com/Luka967/Cigar)
+- [Luka's Cigar](https://github.com/Luka967/Cigar
+- [Cigar2](https://github.com/Cigar2/Cigar2)
 
 ### Uploading skins
 Upload your **PNG** files to the skins folder and run the updateSkinList file in the root directory, you can also do it manually by putting the skin names in `web/skinList.txt` separated by commas (no file extension).
-
-### Todos
-Check out [issue 1](https://github.com/Cigar2/Cigar2/issues/1)
