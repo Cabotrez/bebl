@@ -16,3 +16,5 @@ Locate the select element in the index.html and add new entries, make sure to on
 
 ### Uploading skins
 Upload your **PNG** files to the skins folder and run the updateSkinList file in the root directory, you can also do it manually by putting the skin names in `web/skinList.txt` separated by commas (no file extension).
+
+![Screenshot](https://cdn.glitch.com/a1cf98e5-e0ca-42b3-ad66-128487a82e2b%2Fbebl-showoff-lol.png?v=1573449100916)
