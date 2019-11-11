@@ -11,7 +11,7 @@ Locate the select element in the index.html and add new entries, make sure to on
 
 ### Credits
 - [Original Cigar](https://github.com/CigarProject/Cigar)
-- [Luka's Cigar](https://github.com/Luka967/Cigar
+- [Luka's Cigar](https://github.com/Luka967/Cigar)
 - [Cigar2](https://github.com/Cigar2/Cigar2)
 
 ### Uploading skins
