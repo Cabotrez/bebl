@@ -12,7 +12,7 @@
     align-items: center;
 }
 #gallery-content {
-    background: #fff;
+    background: #202020;
     max-height: 80%;
     max-width: 60%;
     border-radius: 15px;
@@ -22,7 +22,7 @@
 }
 #gallery-header {
     font-size: 26px;
-    background: #555;
+    background: #151515;
     color: #fff;
     text-align: center;
 }
@@ -40,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    scrollbar-color: #9090a0 #fff;
+    scrollbar-color: #9942e6;
     scrollbar-width: thin;
 }
 #skinsUL::-webkit-scrollbar {
@@ -52,10 +52,10 @@
 }
 #skinsUL::-webkit-scrollbar-thumb {
     border-radius: 6px;
-    background: #9090a0;
+    background: #9942e6;
 }
 #skinsUL::-webkit-scrollbar-thumb:hover {
-    background: slategrey;
+    background: #9942e6;
 }
 .skin {
     margin-right: 10px;
@@ -77,6 +77,7 @@
     text-align: center;
     margin-bottom: 0;
     transition: all 0.2s;
+    color: #fff;
 }
 .circular:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, .8);

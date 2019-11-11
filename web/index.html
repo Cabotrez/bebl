@@ -13,11 +13,13 @@
 
     <title>Bebl.io</title>
 
-    <link id="favicon" rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!--<link id="favicon" rel="icon" type="image/png" href="assets/img/favicon.png">-->
+    <link id="favicon" rel="icon" type="image/png" href="https://cdn.glitch.com/68031e0d-1ebf-48b6-ace7-7087060ad7cf%2Fbebl-icon.png?v=1573442770138">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/gallery.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 
     <script src="assets/js/quadtree.js"></script>
     <script src="assets/js/main_out.js"></script>
@@ -35,53 +37,55 @@
             <div id="leftPanel">                <center>
           <p id="cus">
             <strong>Settings</strong>
-              </p><br /></center>
- <div id="settings" class="checkbox"><center>
-                <div style="margin: 6px;">
-                    <label><input id="showSkins" type="checkbox">Skins</label>
-                    <label><input id="showNames" type="checkbox">Names</label>
-                    <label><input id="darkTheme" type="checkbox">Dark Theme</label>
-                    <label><input id="showColor" type="checkbox">Color</label>
-                    <label><input id="showMass" type="checkbox">Mass</label>
-                    <label><input id="showChat" type="checkbox">Chat</label>
-                    <label><input id="showMinimap" type="checkbox">Minimap</label>
-                    <label><input id="showPosition" type="checkbox">Position</label>
-                    <label><input id="showBorder" type="checkbox">Border</label>
-                    <label><input id="showGrid" type="checkbox">Grid</label>
-                    <label><input id="moreZoom" type="checkbox">Zoomout</label>
-                    <label><input id="fillSkin" type="checkbox">Fill Skin</label>
-                     <label><input id="backgroundSectors" type="checkbox">Background Sectors</label>
+              </p></center>
+ <div id="settings" class="checkbox">
+                <div style="margin-left: 30px;">
+                  <br />
+                    <label><input id="showSkins" type="checkbox">Skins</label><br />
+                    <label><input id="showNames" type="checkbox">Names</label><br />
+                    <label><input id="darkTheme" type="checkbox">Dark Theme</label><br />
+                    <label><input id="showColor" type="checkbox">Color</label><br />
+                    <label><input id="showMass" type="checkbox">Mass</label><br />
+                    <label><input id="showChat" type="checkbox">Chat</label><br />
+                    <label><input id="showMinimap" type="checkbox">Minimap</label><br />
+                    <label><input id="showPosition" type="checkbox">Position</label><br />
+                    <label><input id="showBorder" type="checkbox">Border</label><br />
+                    <label><input id="showGrid" type="checkbox">Grid</label><br />
+                    <label><input id="moreZoom" type="checkbox">Zoomout</label><br />
+                    <label><input id="fillSkin" type="checkbox">Fill Skin</label><br />
+                     <label><input id="backgroundSectors" type="checkbox">Background Sectors</label><br />
                   <label><input id="jellyPhysics" type="checkbox">Jelly Physics</label>
-                  <hr />
-                  <p id="howto"><strong>Controls:</strong></p><br />-Press <strong>W</strong> to eject mass.<br>-Press <strong>Space</strong> to split.<br>-Press <strong>Q</strong> to control minion
-                  </div>
+                  </div><!--<div style="background-color: #9942e6; color:#151515; padding: 14.7px; border-radius: 0px; margin-top:10%; border-bottom-left-radius: 12px; font-family: 'Baloo Bhai', cursive;">
+   <strong><center>New Gamemodes Have Arrived, Enjoy!</center></strong>
+            </div>-->
               </div></div>
-                </center>
                              <div id="rightPanel">
-                          <center>          
-            <strong>
-              <button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Skins Gallery</button>
-                  </strong><div style="background-color: red; color:white; padding: 15px; border-radius: 0px; margin-top:100.4%; border-bottom-right-radius: 12px;">
-                <strong>New Skins Have Arrived, Enjoy!</strong>
-            </div></center>
+                          <center><button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>
+                            <center><input id="currentskin"  placeholder="   Current Skin:" disabled><strong><input id="skin" class="form-control"  placeholder="Skin Name" disabled></strong></center><br /></center>
                 </div>
             <div id="midPanel"> 
               <div class="form-group">
-              <h2 id="title"><strong><center><img src="https://cdn.glitch.com/ee7f3079-cd8a-49a0-9a3d-3b0d060f61fb%2Fbebl-io-resize.png?v=1572448530263" width="90%" /></center></strong></h2>
+              <h2 id="title"><strong><center><img src="https://cdn.glitch.com/68031e0d-1ebf-48b6-ace7-7087060ad7cf%2FBebl.io.png?v=1573443126138" width="90%" /></center></strong></h2>
               <br />
               </div>
             <div class="form-group"><strong>
-                <input id="nick" class="form-control" placeholder="Nickname" maxlength="300">
-                <input id="skin" class="form-control"  placeholder="Skin Name">
+                <input id="nick" class="form-control" placeholder="Nickname" maxlength="300" style="text-align:left;">
+                <!--<button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>-->
                 <select id="gamemode" class="form-control" onchange="setserver(this.value)" required>
-                    <option value="fair-spectroscope.glitch.me:443" selected>Clasic</option>
+                    <option value="ultrasplit-bebl.glitch.me" selected>Ultrasplit [NEW]</option>
+                    <option value="fair-spectroscope.glitch.me">Ultrasplit [OLD]</option>
+                    <option value="ionized-stage.glitch.me">Bots [Experimental]</option>
+                    <option value="steel-sombrero.glitch.me">Virus Mode [Experimental]</option>
+                    <option value="seed-principle.glitch.me">Selfeed [Experimental]</option>
+                    <option value="cooperative-dormouse.glitch.me">Rainbow [Experimental]</option>
+                    <!--<option value="simplistic-plantain.glitch.me">[ADMIN] test server</option>-->
                 </select></strong>
             </div>
-
-            <button id="play-btn" class="btn btn-play btn-primary btn-needs-server">Join Server</button>
-            <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server">Spectate</button>
-            <div id="instructions">
-              </div></div>
+<strong>
+            <button id="play-btn" class="btn btn-play btn-primary btn-needs-server" style="font-family: 'Baloo Bhai', cursive;">Join Server</button>
+  <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server" style="font-family: 'Baloo Bhai', cursive;">Spectate</button></strong>
+                   <div id="instructions">
+            </div></div>
 
             <hr>
             <div id="footer">
@@ -91,8 +95,8 @@
 
     <div id="connecting">
         <div id="connecting-content">
-            <h2>Connecting</h2>
-            <p> If you cannot connect to the servers, check if you have some anti virus or firewall blocking the connection. The servers can take up to 30 seconds to start. If it does not load change servers.</p>
+          <center><strong><h2 style="-webkit-text-stroke-width: 2.5px; -webkit-text-stroke-color: black; color:white; font-size: 50px; font-family: 'Baloo Bhai', cursive;">Connecting..</h2></strong></center>
+          <strong><p id="connect"><center>The servers can take up to 30 seconds to start.</center></p></strong>
         </div>
     </div>
 

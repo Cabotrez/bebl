@@ -461,8 +461,9 @@
                     mod = !!(flags & 0x20);
 
                 if (server && name !== "SERVER") name = "[SERVER] " + name;
-                if (admin) name = "[ADMIN] " + name;
+                if (admin) name = "[ADMIN]" + name;
                 if (mod) name = "[MOD] " + name;
+                if (admin) color = "#8C35E4";
                 var wait = Math.max(3000, 1000 + message.length * 150);
                 chat.waitUntil = syncUpdStamp - chat.waitUntil > 1000 ? syncUpdStamp + wait : chat.waitUntil + wait;
                 chat.messages.push({
@@ -607,7 +608,7 @@
         gamemode: "",
         showSkins: true,
         showNames: true,
-        darkTheme: false,
+        darkTheme: true,
         showColor: true,
         showMass: false,
         _showChat: true,
@@ -621,8 +622,8 @@
         },
         showMinimap: true,
         showPosition: false,
-        showBorder: false,
-        showGrid: true,
+        showBorder: true,
+        showGrid: false,
         playSounds: false,
         soundsVolume: 0.5,
         moreZoom: false,
@@ -1073,7 +1074,7 @@
 
         mainCtx.save();
 
-        mainCtx.fillStyle = settings.darkTheme ? "#111" : "#F2FBFF";
+        mainCtx.fillStyle = settings.darkTheme ? "#000" : "#FFFFFF";
         mainCtx.fillRect(0, 0, mainCanvas.width, mainCanvas.height);
         if (settings.showGrid) drawGrid();
         if (settings.backgroundSectors) drawBackgroundSectors();
