@@ -1,5 +1,5 @@
-# Cigar2  
-Protocol 6 Agar.io client for private servers
+# Bebl  
+Bebl is an edited version of the cigar2 client for ogar servers
 
 ### Getting support | Discord server
 If you need extra help with anything you should ask it in the [Agar.io Private Servers Discord](https://discord.gg/66X2ESb) and not in issues.
