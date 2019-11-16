@@ -13,16 +13,16 @@
 
     <title>Bebl.io</title>
 
-    <!--<link id="favicon" rel="icon" type="image/png" href="assets/img/favicon.png">-->
-    <link id="favicon" rel="icon" type="image/png" href="https://cdn.glitch.com/68031e0d-1ebf-48b6-ace7-7087060ad7cf%2Fbebl-icon.png?v=1573442770138">
+    <link id="favicon" rel="icon" type="image/png" href="https://cdn.glitch.com/f949f01d-5d5b-4122-ba6f-d1ac23272b9d%2FBebl.io%20(32x32).png?v=1573844886162">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/gallery.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
 
     <script src="assets/js/quadtree.js"></script>
     <script src="assets/js/main_out.js"></script>
+    <script src="https://kit.fontawesome.com/fef8b917d2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -62,18 +62,19 @@
                              <div id="rightPanel">
                           <center><button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>
                             <center><input id="currentskin"  placeholder="   Current Skin:" disabled><strong><input id="skin" class="form-control"  placeholder="Skin Name" disabled></strong></center><br /></center>
-                               <strong><a href="https://forms.gle/eVgW3XJYBnqYx9Xv9" target="_blank"><button id="role-form">Apply for a Role</button></a><a href="https://forms.gle/k4wKPV4bmeDnViaL9" target="_blank"><button id="clan-register">Register a Clan</button></a></strong>
-                               <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2AlQVvwvA2jpXLscEDyHSpjM7jm-dNfddrJMeYMPbXg4EvA/viewform" target="_blank"><button id="submit-skin">Submit a Skin</button></a><a href="https://distrustsarcade.weebly.com/" target="_blank"><button id="more-games">More Games</button></a></strong>
+                               <strong><a href="https://forms.gle/eVgW3XJYBnqYx9Xv9" target="_blank"><button id="role-form">Apply for a Role</button></a><a href="https://distrustsarcade.weebly.com/" target="_blank"><button id="more-games">More Games</button></a></strong>
                 </div>
             <div id="midPanel"> 
               <div class="form-group">
-              <h2 id="title"><strong><center><img src="https://cdn.glitch.com/68031e0d-1ebf-48b6-ace7-7087060ad7cf%2FBebl.io.png?v=1573443126138" width="90%" /></center></strong></h2>
+              <h2 id="title"><!--<strong><center><img src="https://cdn.glitch.com/68031e0d-1ebf-48b6-ace7-7087060ad7cf%2FBebl.io.png?v=1573443126138" width="90%" /></center></strong>--><strong><center><img src="https://cdn.glitch.com/f949f01d-5d5b-4122-ba6f-d1ac23272b9d%2FBebl.io%20(virus-logo).png?v=1573845172045" height="150px" /><br /><text style="font-size:300; color:#9942e6;">Bebl</text><text style="font-size:100;">.io</text>
+                
+                </center></strong></h2>
               <br />
               </div>
             <div class="form-group"><strong>
                 <input id="nick" class="form-control" placeholder="Nickname" maxlength="300" style="text-align:left;">
                 <!--<button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>-->
-                <select id="gamemode" class="form-control" onchange="setserver(this.value)" required>
+<select id="gamemode" class="form-control" onchange="setserver(this.value)" required>
                     <option value="ultrasplit-bebl.glitch.me" selected>Ultrasplit [NEW]</option>
                     <option value="fair-spectroscope.glitch.me">Ultrasplit [OLD]</option>
                     <option value="ionized-stage.glitch.me">Bots [Experimental]</option>
@@ -84,8 +85,8 @@
                 </select></strong>
             </div>
 <strong>
-            <button id="play-btn" class="btn btn-play btn-primary btn-needs-server" style="font-family: 'Baloo Bhai', cursive;">Join Server</button>
-  <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server" style="font-family: 'Baloo Bhai', cursive;">Spectate</button></strong>
+            <button id="play-btn" class="btn btn-play btn-primary btn-needs-server" style="font-family: 'Ubuntu', sans-serif;">Join Server</button>
+  <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server" style="font-family: 'Ubuntu', sans-serif;">Spectate</button></strong>
                    <div id="instructions">
             </div></div>
 
@@ -97,7 +98,7 @@
 
     <div id="connecting">
         <div id="connecting-content">
-          <center><strong><h2 style="-webkit-text-stroke-width: 2.5px; -webkit-text-stroke-color: black; color:white; font-size: 50px; font-family: 'Baloo Bhai', cursive;">Connecting..</h2></strong></center>
+          <center><strong><h2 style="-webkit-text-stroke-width: 3.2px; -webkit-text-stroke-color: #000; color:#fff; font-size: 50px; font-family: 'Ubuntu', sans-serif;">Connecting..</h2></strong></center>
           <strong><p id="connect"><center>The servers can take up to 30 seconds to start.</center></p></strong>
         </div>
     </div>

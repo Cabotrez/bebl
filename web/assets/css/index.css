@@ -7,10 +7,12 @@ html, body {
     width: 100%;
     height: 100%;
     position: fixed;
-	color: #151515;
+	  color: #151515;
+    font-family: 'Ubuntu', sans-serif;
 }
 input[type=checkbox] {
     cursor: pointer;
+    outline: none;
 }
 .button5 {background-color: #555555;} 
 #overlays, #connecting {
@@ -34,8 +36,9 @@ input[type=checkbox] {
     padding: 5px 15px;
 }
 #title {
-    padding: 10px;
-    color:#fff;
+    padding: 5px;
+    margin: 0px;
+    color: #fff;
 }
 #nick {
     width: 100%;
@@ -74,6 +77,8 @@ input[type=checkbox] {
     background-color:#2E2E2E;
     border:#2E2E2E;
     color:white;
+    outline: none;
+    shadow: none;
 }
 #gamemode {
     margin-top: 10px;
@@ -180,6 +185,18 @@ input[type=checkbox] {
     border:#00e676 2px solid;
     color:#151515;
     height:15%;
+    outline: none;
+} 
+#play-btn:active {
+    width: 45%;
+    margin-bottom: 10px;
+    margin-top:6.5px;
+    background-color:#00e676;
+    border:#00e676 2px solid;
+    color:#151515;
+    height:13%;
+    margin-left: 5px;
+    outline: none;
 } 
 #spectate-btn {
     width: 49%;
@@ -190,7 +207,19 @@ input[type=checkbox] {
     border:#42ade6 2px solid;
     height:15%;
     margin-top:3px;
+    outline: none;
 }
+#spectate-btn:active {
+    width: 45%;
+    margin-bottom: 10px;
+    margin-top:6.5px;
+    background-color:#42ade6;
+    border:#42ade6 2px solid;
+    color:#151515;
+    height:13%;
+    margin-right: 5px;
+    outline: none;
+} 
 #play-btn, #spectate-button {
     display: inline;
 }
@@ -202,12 +231,13 @@ input[type=checkbox] {
     border:#7A26C4 7px solid;
     height:35%;
     margin:0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Ubuntu', sans-serif;
     padding-top:32px;
     padding-bottom:32px;
-    padding-left:3.5px;
+    padding-left:2.5px;
     border-radius:1000px;
     margin-bottom:5%;
+    outline: none;
 }
 #submit-skin {
     color:#fff;
@@ -217,16 +247,18 @@ input[type=checkbox] {
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
 #more-games {
     color:#fff;
     background-color:#202020;
-    margin-top:0%;
+    margin-top:64.7%;
     border:#202020 2px solid;
     width:50%;
     margin-left:0%;
     border-bottom-right-radius:12px;
     height:13%;
+    outline: none;
 }
 #submit-skin:hover {
     color:#fff;
@@ -236,25 +268,28 @@ input[type=checkbox] {
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
 #more-games:hover {
     color:#fff;
     background-color:#2E2E2E;
-    margin-top:0%;
+    margin-top:64.7%;
     border:#2E2E2E 2px solid;
     width:50%;
     margin-left:0%;
     border-bottom-right-radius:12px;
     height:13%;
+    outline: none;
 }
 #role-form {
     color:#fff;
     background-color:#202020;
-    margin-top:47.7%;
+    margin-top:64.7%;
     border:#202020 2px solid;
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
 #clan-register {
     color:#fff;
@@ -264,15 +299,17 @@ input[type=checkbox] {
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
 #role-form:hover {
     color:#fff;
     background-color:#2E2E2E;
-    margin-top:47.7%;
+    margin-top:64.7%;
     border:#2E2E2E 2px solid;
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
 #clan-register:hover {
     color:#fff;
@@ -282,7 +319,9 @@ input[type=checkbox] {
     width:50%;
     margin-left:0%;
     height:13%;
+    outline: none;
 }
+#ga
 #modes {
     color:#fff;
 }
@@ -354,7 +393,7 @@ input[type=checkbox] {
 	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 10s infinite linear;
+	/*-webkit-animation: hue 10s infinite linear;*/
 }
 input[type="Checkbox"] {
     position: relative;
@@ -369,6 +408,7 @@ input[type="Checkbox"] {
 }
 input:checked[type="Checkbox"] {
     background: #9942e6;
+    outline: none;
 }
 input[type="Checkbox"]::before {
     content: '';
@@ -382,9 +422,11 @@ input[type="Checkbox"]::before {
     transition: .5s;
     transform: scale(1.1);
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    outline: none;
 }
 input:checked[type="Checkbox"]::before {
     left: 50%;
+    outline: none;
 }
 
 @-webkit-keyframes hue {

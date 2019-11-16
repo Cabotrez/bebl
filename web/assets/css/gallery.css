@@ -21,10 +21,11 @@
     overflow: hidden;
 }
 #gallery-header {
-    font-size: 26px;
+    font-size: 30px;
     background: #151515;
     color: #fff;
     text-align: center;
+    padding: 10px;
 }
 #gallery-body {
     display: flex;
@@ -69,9 +70,21 @@
     background: url("../img/checkerboard.png");
     background-repeat: no-repeat;
     background-size: 150px 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 10px solid #202020;
+}
+.circular:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../img/checkerboard.png");
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     cursor: pointer;
     transition: all 0.2s;
+    border: 0px solid #202020;
 }
 .skinName {
     text-align: center;
