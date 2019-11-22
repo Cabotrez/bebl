@@ -55,36 +55,38 @@
                     <label><input id="fillSkin" type="checkbox">⠀⠀Fill Skin</label><br />
                      <label><input id="backgroundSectors" type="checkbox">⠀⠀Background Sectors</label><br />
                   <label><input id="jellyPhysics" type="checkbox">⠀⠀Jelly Physics</label>
-                  </div><!--<div style="background-color: #9942e6; color:#151515; padding: 14.7px; border-radius: 0px; margin-top:10%; border-bottom-left-radius: 12px; font-family: 'Baloo Bhai', cursive;">
-   <strong><center>New Gamemodes Have Arrived, Enjoy!</center></strong>
-            </div>-->
-              </div></div>
-                             <div id="rightPanel">              
-                               <center><button id="gallery-btn" onclick="openSkinsList()"  class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>
-                            <center><input id="currentskin"  placeholder="   Current Skin:" disabled><strong><input id="skin" class="form-control"  placeholder="Skin Name" disabled></strong></center><br /></center>
-                               <strong><a href="https://forms.gle/eVgW3XJYBnqYx9Xv9" target="_blank"><button id="role-form">Apply for a Role</button></a><a href="https://distrustsarcade.weebly.com/" target="_blank"><button id="more-games">More Games</button></a></strong>
-                </div>
-            <div id="midPanel"> 
-              <div class="form-group">
-              <h2 id="title"><!--<strong><center><img src="https://cdn.glitch.com/f949f01d-5d5b-4122-ba6f-d1ac23272b9d%2FBebl.io%20(virus-logo).png?v=1573845172045" height="150px" /><br /><text style="font-size:300; color:#9942e6;">Bebl</text><text style="font-size:100;">.io</text>-->
-                <strong><center><p style="font-size:50px; margin-top:5%;"><text id="bebl">Bebl</text><text id="io">.io</text></p>
-                </center></strong></h2>
-              <br />
-              </div>
-            <div class="form-group"><strong>
-                <input id="nick" class="form-control" placeholder="Nickname" maxlength="300" style="text-align:left;">
-                <!--<button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Choose Skin</button>-->
-<select id="gamemode" class="form-control" onchange="setserver(this.value)" required>
+                  </div>
+   <select id="gamemode" class="form-control" onchange="setserver(this.value)" required>
                     <option value="ultrasplit-bebl.glitch.me" selected>Ultrasplit [NEW]</option>
                     <option value="fair-spectroscope.glitch.me">Ultrasplit [OLD]</option>
                     <option value="ionized-stage.glitch.me">Bots [Experimental]</option>
                     <option value="steel-sombrero.glitch.me">Virus Mode [Experimental]</option>
                     <option value="seed-principle.glitch.me">Selfeed [Experimental]</option>
-                    <option value="cooperative-dormouse.glitch.me">Rainbow [Experimental]</option>
-                    <option value="buttercup-wolfberry.glitch.me">MOE [ADMIN TEST]</option>
-                    <!--<option value="simplistic-plantain.glitch.me">[ADMIN] test server</option>-->
-                </select></strong>
-            </div>
+              </select>
+              </div></div>
+                             <div id="rightPanel">
+                                 <center><strong></strong><br /><center>
+              <button id="serv-ultra" onclick="setserver('ultrasplit-bebl.glitch.me');"><img src="https://cdn.glitch.com/f25d0bf7-618b-46bd-9d5c-0a39288bb9c6%2Fbebl-ultrasplit.png?v=1574300203747" height="50px" style="margin-bottom:5px;" /><br />Ultrasplit</button>
+              <button id="serv-bots" onclick="setserver('bebl-bots.glitch.me');"><img src="https://cdn.glitch.com/f25d0bf7-618b-46bd-9d5c-0a39288bb9c6%2Fbebl-bots.png?v=1574300197670" height="50px" style="margin-bottom:5px;" /><br />Bots</button><br />
+              <button id="serv-virus" onclick="setserver('bebl-virus.glitch.me');"><img src="https://cdn.glitch.com/f25d0bf7-618b-46bd-9d5c-0a39288bb9c6%2Fbebl-virus-feed.png?v=1574300200422" height="50px" width="55px" style="margin-bottom:5px;" /><br />Virus Mode</button>
+              <button id="serv-feed" onclick="setserver('bebl-selfeed.glitch.me');"><img src="https://cdn.glitch.com/f25d0bf7-618b-46bd-9d5c-0a39288bb9c6%2Fbebl-selfeed.png?v=1574300198272" height="40px" width="65px" style="margin-bottom:10px; margin-top:5px;" /><br />Selfeed</button>
+              </center>
+                               <strong><a href="https://forms.gle/eVgW3XJYBnqYx9Xv9" target="_blank"><button id="role-form">Apply for a Role</button></a><a href="https://distrustsarcade.weebly.com/" target="_blank"><button id="more-games">More Games</button></a></strong>
+                                 </center></div>
+            <div id="midPanel"> 
+              <div class="form-group">
+              <h2 id="title">
+                <strong><center>
+                </center></strong></h2>
+              <br />
+              </div>
+              <center><button id="gallery-btn" onclick="openSkinsList()"  class="btn btn-play btn-primary btn-needs-server btn-info" >Bebl.io</button></center>
+            <div class="form-group"><strong>
+              <center>
+                <input id="nick" class="form-control" placeholder="Nickname" maxlength="300" style="text-align:left;">
+                        <input id="skin" class="form-control"  placeholder="Skin Name" ng-model="currentSkin"></center>
+</strong><br />
+                   </div>
 <strong>
             <button id="play-btn" class="btn btn-play btn-primary btn-needs-server" style="font-family: 'Ubuntu', sans-serif;">Join Server</button>
   <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server" style="font-family: 'Ubuntu', sans-serif;">Spectate</button></strong>
@@ -93,7 +95,6 @@
 
             <hr>
             <div id="footer">
-                <!--<button class="button button5" onclick="window.open('/console','winname') ">Admin Console</button>-->
                    </div>  
        </div></div>
 
